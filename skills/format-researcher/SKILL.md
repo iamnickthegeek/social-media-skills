@@ -1,7 +1,7 @@
 ---
 name: format-researcher
 description: >-
-  Research the top 10 highest-performing content formats per platform, filtered through the user's specific niche, ICP, and business context. Produces a personalised format guide (my-formats.md) that all content skills reference. Use this skill whenever the user says "research my formats", "find what's working on [platform]", "what content should I post", "format research", "what formats work for my niche", or wants data-backed format recommendations tailored to their business. This is an optional Phase 0.5 step — run before the regular content workflow.
+  Research the top 10 highest-performing content formats per platform, filtered through the user's specific niche, ICP, and business context. Produces a personalised format guide (my-formats.md) that all content skills reference. Uses Fableous 6-stage pipeline for rigorous, data-backed research. Use this skill whenever the user says "research my formats", "find what's working on [platform]", "what content should I post", "format research", "what formats work for my niche", or wants data-backed format recommendations tailored to their business. This is an optional Phase 0.5 step — run before the regular content workflow.
 ---
 
 # Format Researcher
@@ -54,47 +54,15 @@ Wait for confirmation.
 
 ## Step 3. Research each platform
 
-For EACH platform the user selected, run a deep research pass using this exact prompt:
+For EACH platform the user selected, run the Fableous 6-stage pipeline using the research prompt at `references/research-prompt-template.md`. The prompt includes:
+- Full business context (niche, ICP, goals)
+- Per-format data requirements (engagement, template, examples, pitfalls)
+- Fableous orchestration instructions (stages, verification gates, work log)
+- Output: `formats-[platform]-2026.md` per platform
 
-```
-Deep research task: I need a comprehensive, data-backed analysis of the TOP 10 highest-performing content formats on [PLATFORM] as of mid-2026.
+Run each platform's research as a separate pipeline. Research and Plan stages can run async.
 
-For EACH of the 10 formats, provide:
-
-1. FORMAT NAME and DESCRIPTION
-   - What does this format look like in practice?
-   - What's the ideal structure/template?
-   - How long should it be (duration, word count, slide count)?
-
-2. ENGAGEMENT DATA
-   - Average engagement rate / impressions / saves / shares
-   - How it compares to other formats on the same platform (rank it)
-   - Source citations (dated, from 2025–2026)
-
-3. WHY IT WORKS (algorithmic / psychological / behavioural)
-   - What signals does the algorithm reward?
-   - What psychological principle makes it effective?
-   - What viewer behaviour does it trigger?
-
-4. TEMPLATE / FILL-IN-THE-BLANKS
-   - A reusable template with specific character counts, timing, structure
-
-5. 3 REAL EXAMPLES (if available)
-   - Link to or describe real posts that crushed with this format
-   - Why specifically did they work?
-
-6. WHAT TO AVOID
-   - Common mistakes that kill performance
-   - Format-specific pitfalls
-
-Rank all 10 formats by engagement performance (highest first). Use structured markdown with clear sections, data tables where possible, and source URLs.
-
-Search sources: Buffer State of Social 2026, platform algorithm updates 2025–2026, [PLATFORM] engagement benchmarks 2026, Socialinsider [PLATFORM] 2026, Metricool [PLATFORM] 2026, platform official engineering/blog posts.
-
-Prioritise: data over opinions, recent sources (2025–2026), large-scale analyses over anecdotal. Focus ONLY on [PLATFORM]. Go deep, not broad.
-```
-
-Save each platform's raw research to `research-[platform]-formats.md` in the project.
+Save each platform's canonical output to `formats-[platform]-2026.md` in the project.
 
 ## Step 4. Filter and recommend
 

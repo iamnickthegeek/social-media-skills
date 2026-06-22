@@ -4,7 +4,7 @@ Bleeding-edge social media content skills for [Hermes AI agent](https://hermes-a
 
 ## What This Is
 
-A collection of 18 AI agent skills that work together as a content pipeline:
+A collection of 19 AI agent skills that work together as a content pipeline:
 
 1. **Research** → Find trending stories in your niche
 2. **Ideate** → Generate 32+ post ideas mapped to platforms
