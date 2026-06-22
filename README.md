@@ -20,6 +20,7 @@ A collection of 18 AI agent skills that work together as a content pipeline:
 |-------|---------|
 | `analytics-dashboard` | LinkedIn Analytics → interactive dashboard + strategic analysis |
 | `content-matrix` | 32+ post ideas from your pillars × 8 formats |
+| `format-researcher` | Research top 10 formats per platform, filtered through your niche/ICP |
 | `gemini-carousel` | Slide-by-slide LinkedIn carousel via Gemini |
 | `gemini-infographic` | Hand-drawn whiteboard infographic via Gemini |
 | `graphic-designer` | HTML/CSS graphics or AI-generated visuals |
