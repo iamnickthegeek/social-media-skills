@@ -4,7 +4,7 @@ Bleeding-edge social media content skills for [Hermes AI agent](https://hermes-a
 
 ## What This Is
 
-A collection of 16 AI agent skills that work together as a content pipeline:
+A collection of 18 AI agent skills that work together as a content pipeline:
 
 1. **Research** → Find trending stories in your niche
 2. **Ideate** → Generate 32+ post ideas mapped to platforms
@@ -33,7 +33,9 @@ A collection of 16 AI agent skills that work together as a content pipeline:
 | `profile-optimizer` | LinkedIn profile rebuild for conversions |
 | `quote-post` | Quote graphic posts for LinkedIn |
 | `reels-scripting` | Instagram Reel scripts from newsletter content |
+| `threads` | Threads content — image-first hot takes, opinionated text |
 | `voice-builder` | Personalised voice profile from writing samples |
+| `x-twitter` | X/Twitter content — threads, single tweets, stories, data |
 
 ## Quick Start
 
@@ -75,11 +77,11 @@ Last research update: **June 2026**
 
 ## Platforms
 
-- **LinkedIn** — primary focus (carousels, text posts, carousels)
+- **LinkedIn** — primary focus (carousels, text posts)
+- **X/Twitter** — threads, single tweets, stories, data tweets
 - **Instagram** — carousels via `reels-scripting` and `graphic-designer`
+- **Threads** — image-first hot takes, opinionated text
 - **Substack/Email** — newsletters via `newsletter-voice`
-- **X/Twitter** — not included (handle manually or via Buffer)
-- **Threads** — not included
 
 ## Based On
 
