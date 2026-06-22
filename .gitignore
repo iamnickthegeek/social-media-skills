@@ -1,0 +1,43 @@
+# .gitignore — Social Media Skills
+
+## Secrets and credentials
+*.env
+.env.*
+!.env.example
+*token*
+*secret*
+*key*
+*.pem
+*.p12
+*.ghp*
+
+## OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+## Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-*
+
+## Build artifacts
+node_modules/
+dist/
+build/
+*.pyc
+__pycache__/
+
+## Temporary files
+*.tmp
+*.bak
+
+## Local Hermes data (never commit)
+.usage.json
+.usage.json.lock
+.curator_state
+.curator_backups/
+.hub/
