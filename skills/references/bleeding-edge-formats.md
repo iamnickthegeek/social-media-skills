@@ -151,15 +151,127 @@ P.S. (forward-share bait):
 
 ---
 
+## X/Twitter
+
+### #1 Format: The Argument Thread (5–10 tweets, no media in tweet 1)
+
+- **Algorithm:** Replies weighted 27x–150x more than likes — replies are the single strongest distribution signal (X open-sourced algorithm, January 2026)
+- **Text-first:** Outperforms video by 30% in algorithmic distribution (Posteverywhere, May 2026)
+- **Sentiment:** Grok-based analysis rewards constructive, nuanced content; deprioritizes combative hot takes
+- **Engagement jump:** X saw the biggest engagement jump across all platforms — +44% YoY (Buffer, March 2026)
+- **Content half-life:** 50% of visibility lost every 6 hours — reply velocity in the first hour determines whether a thread lives or dies (OpenTweet, February 2026)
+
+### Thread Template (5–10 tweets)
+
+```
+TWEET 1 — THE PROVOCATIVE OPENING (NO link, NO image, NO video)
+  "[Strong, specific claim]. Here's why:"
+  or
+  "I've [done X / studied Y] for [Z years]. What nobody tells you:"
+  → Must be a statement someone will want to agree with OR argue with. Neutral takes die.
+
+TWEET 2 — NAME THE MISCONCEPTION
+  "Most people think [common belief]. Here's why that's wrong:"
+  → Frames the thread as correcting a widespread error.
+
+TWEETS 3–7 — THE EVIDENCE (one point per tweet)
+  • States one piece of evidence, example, or story
+  • Is self-contained (readable on its own)
+  • Builds toward the conclusion
+  • Alternates between data/example and personal experience
+
+TWEET 8 — THE COUNTERARGUMENT
+  "Now, the counterargument: [acknowledge the other side]..."
+  → Builds trust. Invites opposing views to engage.
+
+TWEET 9 — THE SYNTHESIS
+  "The real insight isn't [surface take]. It's [deeper principle]."
+  → This is the quotable tweet.
+
+TWEET 10 — THE REPLY BAIT
+  "What's your experience with [topic]? I'm genuinely curious — especially if you disagree."
+  → Explicit invitation to reply.
+```
+
+### X Single Tweet Formats
+
+**Provocative Single Tweet:**
+- No links, no hashtags
+- Under 100 characters for max retweetability
+- Must be arguable (someone would quote-tweet to agree OR disagree)
+
+**Story Tweet:**
+- Hook in first line ("[Specific moment] — [context]")
+- Present tense, cinematic
+- Earned lesson at the end
+
+**Data Tweet:**
+- Lead with the most surprising number
+- Cite the source
+- Make the implication explicit
+
+### X Benchmarks
+
+- Optimal thread length: 5–10 tweets
+- Best posting frequency: 5–10 tweets/week
+- Reply velocity in first hour is the #1 predictor of thread performance
+- Text-first content outperforms video by 30%
+- Content half-life: 6 hours (50% visibility loss)
+
+---
+
+## Threads
+
+### #1 Format: Image + 50–200 Character Opinionated Text
+
+- **Images outperform text** — counterintuitive for a "text-first" platform (Buffer, 2026; Creative Black Pug Studio, January 2026)
+- **Video:** highest median engagement (5.55%), **images:** 4.55%, **text-only:** consistently last (Buffer, April 2026; Posteverywhere, April 2026)
+- **Positioning:** Threads is the "unwinding" platform absorbing users fleeing X's combative dynamics — constructive thought leadership faces less competition (Kiosk Agency, 2026)
+- **Cross-integration:** Instagram-to-Threads means your Instagram audience sees Threads posts with priority (RecurPost, April 2026)
+- **Growth:** Most brands growing quickly post 3–7× per week plus daily reply activity (The Gain Blog, April 2026)
+
+### Threads Template
+
+```
+THE IMAGE (one of these):
+  • A data chart or graph with one clear takeaway
+  • A behind-the-scenes photo (desk, whiteboard, coffee + notebook)
+  • A quote graphic (your own words in clean typography)
+  • A screenshot (tweet, article headline, email, DMs)
+  • A meme-format image with text overlay (only if on-brand)
+
+THE TEXT (50–200 characters):
+  "[Opinionated statement about the image]."
+  or
+  "This [chart/moment] changed how I think about [topic]. Here's the one thing I realized:"
+  or
+  "Just [did/experienced/saw] [specific thing]. The lesson: [one sentence]."
+
+  → Must feel spontaneous and reactive, even when planned.
+  → No hashtags. No links. Pure, unfiltered thought.
+```
+
+### Threads Benchmarks
+
+- Optimal text length: 50–200 characters (shorter = better)
+- Images strongly preferred — text-only consistently ranks last
+- Posting frequency: 3–7x/week for growth
+- Daily reply activity is as important as posting (5–10 substantive replies/day)
+- No hashtags, no links in posts
+- Opinionated > neutral (neutral gets ignored)
+
+---
+
 ## Cross-Platform Engagement Benchmarks (June 2026)
 
-| Metric | LinkedIn | Instagram | Substack |
-|--------|----------|-----------|----------|
-| Top format | PDF Carousel (6.60% ER) | Educational Carousel (9–10% ER) | 5–10 min narrative (44% OR) |
-| Save rate leader | Carousels | Carousels (+95%) | N/A |
-| Re-serve window | Per swipe signal | 48-hour algorithmic re-serve | Forward/share driven |
-| Optimal frequency | 4–5x/week | 3–4x/week | 1–2x/week |
-| Best CTA type | Reply bait / comment | Save/share ask | Forward + reply question |
+| Metric | LinkedIn | Instagram | Substack | X/Twitter | Threads |
+|--------|----------|-----------|----------|-----------|---------|
+| Top format | PDF Carousel (6.60% ER) | Educational Carousel (9–10% ER) | 5–10 min narrative (44% OR) | Argument Thread (5–10 tweets) | Image + Hot Take |
+| Save rate leader | Carousels | Carousels (+95%) | N/A | N/A | N/A |
+| Re-serve window | Per swipe signal | 48-hour algorithmic re-serve | Forward/share driven | Reply velocity in 1hr | Instagram cross-post |
+| Optimal frequency | 4–5x/week | 3–4x/week | 1–2x/week | 5–10 tweets/week | 3–7x/week |
+| Best CTA type | Reply bait / comment | Save/share ask | Forward + reply question | Reply bait (question) | Opinionated statement |
+| Content half-life | Hours–weeks (carousel) | 48-hour re-serve | Ongoing (forwardable) | 6 hours | 24–48 hours |
 
 ---
 
