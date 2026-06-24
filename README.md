@@ -34,6 +34,7 @@ A collection of 18 AI agent skills that work together as a content pipeline:
 | `profile-optimizer` | LinkedIn profile rebuild for conversions |
 | `quote-post` | Quote graphic posts for LinkedIn |
 | `reels-scripting` | Instagram Reel scripts from newsletter content |
+| `facebook` | Facebook content — status posts, images, albums/carousels, Reels, native video, link posts, FB Live |
 | `threads` | Threads content — image-first hot takes, opinionated text |
 | `voice-builder` | Personalised voice profile from writing samples |
 | `x-twitter` | X/Twitter content — threads, single tweets, stories, data |
@@ -78,19 +79,22 @@ Last research update: **June 2026**
 
 ## Platforms
 
-- **LinkedIn** — primary focus (carousels, text posts)
-- **X/Twitter** — threads, single tweets, stories, data tweets
-- **Instagram** — carousels via `reels-scripting` and `graphic-designer`
-- **Threads** — image-first hot takes, opinionated text
-- **Substack/Email** — newsletters via `newsletter-voice`
+| Platform | Formats | Primary Skill | Key Benchmark |
+|----------|---------|---------------|---------------|
+| **LinkedIn** | 3 | `post-writer`, `gemini-carousel` | PDF Carousel 6.60% ER |
+| **Instagram** | 7 | `reels-scripting`, `graphic-designer` | Carousels 0.52% ER |
+| **Facebook** | 7 | `facebook` | Status Posts 0.20% ER, Live 35–50% reach |
+| **X/Twitter** | 8 | `x-twitter` | Threads 42% of viral content |
+| **Threads** | 8 | `threads` | Questions 6.14% ER |
+| **Substack** | 6 | `newsletter-voice` | 44% avg open rate |
 
 ## Based On
-
 Originally forked from [charlie947/social-media-skills](https://github.com/charlie947/social-media-skills). Customised with:
-- Shared reference file for format data (single source of truth)
+
+- Shared reference file for format data (`references/bleeding-edge-formats.md`)
 - Step 0 loading in each content-generation skill
-- Harmonised skill naming and structure
-- Updated engagement benchmarks from June 2026 research
+- Facebook platform added (7 formats, 10 sources, 52M+ posts)
+- Cross-platform comparison updated to 6 platforms
 
 ## License
 

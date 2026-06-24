@@ -70,8 +70,9 @@ Run these **for each content batch** (e.g., weekly):
 For each post idea from the matrix:
 
 3. **`post-writer`** — Draft the post in your voice (LinkedIn, text posts).
-4. **`x-twitter`** — Write X/Twitter threads, single tweets, story tweets, or data tweets.
-5. **`threads`** — Write Threads posts (image-first hot takes, opinionated text).
+5. **`x-twitter`** — Write X/Twitter threads, single tweets, story tweets, or data tweets.
+6. **`threads`** — Write Threads posts (image-first hot takes, opinionated text).
+7. **`facebook`** — Write Facebook content across 7 formats: status posts, images, albums/carousels, Reels, native video, link posts, and Facebook Live.
 6. **`post-formatter`** — Apply platform-specific formatting (line breaks, emoji placement, hashtags).
 7. **`post-scorer`** — Score the draft against engagement heuristics. Iterate if below threshold.
 8. **`hook-generator`** — Generate 6 hook variations for the post (for A/B testing on LinkedIn/Twitter).
@@ -119,6 +120,15 @@ When the user says "write a LinkedIn post about X" or "make a carousel from this
 1. Load the relevant skill directly (e.g., `post-writer` → `post-formatter` → `post-scorer`).
 2. Skip the research phase unless the user wants fresh ideas.
 
+### Facebook Quick Run
+
+When the user says "write a Facebook post about X" or "what should I post on Facebook":
+
+1. Load `facebook` skill directly — it reads `references/bleeding-edge-formats.md` for current data.
+2. Recommend the highest-ER format for their goal (Status Posts for engagement, Reels for reach, Live for community, Albums for shares).
+3. Always include the reply strategy reminder (+9.5% lift when you respond to comments).
+4. Remind about Groups if they're looking for organic reach (10–15× vs Pages).
+
 ### Derivative Run
 
 When the user says "turn this post into derivatives" or "make a carousel and infographic from this":
@@ -150,6 +160,7 @@ social-media-skills/
 ├── quote-post/
 ├── reels-scripting/
 ├── threads/
+├── facebook/
 ├── voice-builder/
 ├── x-twitter/
 └── references/
@@ -167,8 +178,11 @@ social-media-skills/
 - **Don't create derivatives before the source post is scored above threshold.** Garbage in, garbage out.
 - **`analytics-dashboard` requires an export file** from LinkedIn Analytics or equivalent. Have it ready.
 - **`reels-scripting` is for short-form video only** — don't use it for LinkedIn text posts.
-- **Keep `references/bleeding-edge-formats.md` current.** The 6 patched sub-skills load this file at runtime. Update it quarterly or when platform algorithms shift.
+- **Keep `references/bleeding-edge-formats.md` current.** The patched sub-skills (x-twitter, threads, facebook, post-writer, post-formatter, hook-generator, gemini-carousel, post-scorer, analytics-dashboard) load this file at runtime. Update it quarterly or when platform algorithms shift.
 - **X/Twitter and Threads are separate skills.** Don't use `post-writer` for X/Threads content — use `x-twitter` and `threads` respectively.
+- **Facebook is a separate skill.** Don't use `post-writer` for Facebook content — use `facebook`. And never use `reels-scripting` for Facebook Reels (different platform, different best practices).
+- **Facebook: format choice matters less than you think.** All formats within <1pp of each other. Content quality trumps format selection. Start with Status Posts for engagement, Reels for reach.
+- **Facebook: Groups are not optional.** 10–15× more organic reach than Pages. If you're only posting to a Page, you're leaving 90% of organic reach on the table.
 - **X/Twitter: no links in tweet 1 of a thread.** It kills distribution. No hashtags either.
 - **Threads: images outperform text.** Always suggest an image option. Text-only consistently ranks last.
 - **`format-researcher` produces `my-formats.md` in the project root.** Don't move or rename it — content skills reference it automatically.
