@@ -26,7 +26,7 @@ A collection of 18 AI agent skills that work together as a content pipeline:
 | `graphic-designer` | HTML/CSS graphics or AI-generated visuals |
 | `hook-generator` | 6 clickbait hook variations for any topic |
 | `newsletter-voice` | Newsletter-specific voice profile |
-| `niche-research` | Surface 20 trending stories from the last 7 days |
+| `niche-research` | Surface 20 trending stories from the last 7 days, with source lens tagging (Current News, Historical Parallel, Viral Social, Community Candor, Thinker Framework, Pure Insight) and Insight Potential scoring |
 | `pinned-comment` | LinkedIn pinned comments + image prompts |
 | `post-formatter` | Framework-based post formatting (PAS, AIDA, BAB, STAR, SLAY) |
 | `post-scorer` | Score posts against real engagement data |
@@ -64,7 +64,7 @@ cp -r social-media-skills/skills/* ~/.hermes/skills/social-media-skills/
 
 ### Weekly Content Batch
 
-1. `niche-research` → Find trending stories
+1. `niche-research` → Find trending stories (scans Reddit, X, Google across 8 query patterns, tags each item with source lenses)
 2. `content-matrix` → Generate post ideas
 3. `post-writer` or `post-formatter` → Draft posts
 4. `post-scorer` → Evaluate before publishing

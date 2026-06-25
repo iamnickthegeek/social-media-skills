@@ -2,7 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased] — 2026-06-24
+## [Unreleased] — 2026-06-25
+
+### Added
+
+- **Source lens system for niche-research** — new tagging layer that classifies every research item into one of six source lenses:
+  - **Current News** — industry events, market moves, new data, regulation changes
+  - **Historical Parallel** — past events/figures with clear modern resonance
+  - **Viral Social** — high-engagement posts revealing structural tensions
+  - **Community Candor** — honest practitioner language from Reddit/forums
+  - **Thinker Framework** — named researchers explaining *why* patterns exist structurally
+  - **Pure Insight** — patterns visible across sources that no single source states directly
+- **Lens-aware synthesis** — themes are now scored by lens depth (3+ lenses = strongest). Community Candor + Thinker Framework pairing flagged as highest-value input.
+- **Insight Potential column** — output table now rates themes High/Medium/Low based on lens composition
+- **Filter by lens** — new post-research option to show only specific lenses or High Insight Potential themes
+- **Expanded Google search queries** — added `[niche] failure`, `[niche] counterintuitive`, `[niche] debate` to the existing news/launch/controversy/research/regulation set
+
+### Changed
+
+- `niche-research` — Step 2d added (source lens tagging). Step 3 updated with lens-aware synthesis rules. Step 4 table updated with Source Lenses and Insight Potential columns. Step 5 updated with "Filter by lens" option. Rules section updated with two new rules (mandatory tagging, multi-lens prioritisation).
+
+## [Previous] — 2026-06-24
 
 ### Added
 
