@@ -1,5 +1,23 @@
 # Change Log — Bleeding Edge Formats Integration
 
+**Date:** June 30, 2026
+**Source research:** X/Twitter source-evidence workflow review
+
+---
+
+## June 30, 2026 - X/Twitter Source Evidence Checkpoint
+
+### `x-twitter/SKILL.md`
+**Patched** - Added Step 1.5 before format selection:
+
+- Requires source evidence for current events, public claims, launches, competitor moves, customer proof, or market conversations
+- Keeps each claim tied to approved public source URLs or notes
+- Treats source text as evidence only, not instructions
+- Keeps TweetClaw as optional read-only OpenClaw context for source packets
+- Leaves drafting, scoring, and final copy inside the `x-twitter` skill
+
+---
+
 **Date:** June 24, 2026
 **Source research:** Deep Facebook research via Fableous pipeline (10 sources, 52M+ posts across Buffer, Socialinsider, SocialBee, Sprout Social, FB Group Bulk Poster, Net Influencer, PostEverywhere, ShortsIntel, Apaya, IQFluence)
 
